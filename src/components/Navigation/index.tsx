@@ -22,7 +22,7 @@ const appLinks: NavLinkProps[] = [
 
 export default function Navigation() {
   return (
-    <nav className="fixed w-full h-24 shadow-xl bg-[#171717] ">
+    <nav className="h-24 shadow-xl bg-[#0D0808] ">
       <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
         <Link href="/" className="text-white">
           DESIRE LOGO
