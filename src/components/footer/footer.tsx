@@ -1,10 +1,33 @@
 import Image from "next/image";
-import { AiFillFacebook } from "react-icons/ai";
+import { BiLogoFacebook, BiLogoYoutube, BiLogoTiktok } from "react-icons/bi";
+
+import { AiFillInstagram } from "react-icons/ai";
+
 import Link from "next/link";
+import OneSocial, { SocialItemsProps } from "./OneSocial";
+
+const appSocial: SocialItemsProps[] = [
+  {
+    href: "https://www.facebook.com/desire.parczew",
+    icon: BiLogoFacebook,
+  },
+  {
+    href: "https://www.instagram.com/czy_to_dizajer",
+    icon: AiFillInstagram,
+  },
+  {
+    href: "https://www.youtube.com/@DizajerOfficial",
+    icon: BiLogoYoutube,
+  },
+  {
+    href: "https://www.tiktok.com/@czy_to_dizajer",
+    icon: BiLogoTiktok,
+  },
+];
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-tl from-[#161213] via-[#171717] mt-auto mb-2 rounded-3xl mx-32">
+    <footer className="bg-gradient-to-r from-[#161213] via-[#17171700] mt-auto mb-4 rounded-3xl mx-32 drop-shadow-lg border-[#261718] border-2">
       <div className="grid grid-cols-[1fr,max-content] px-8 py-6">
         <div className="flex flex-col px-3 py-3 m-0">
           <Image
@@ -14,7 +37,11 @@ export default function Footer() {
             width={256}
             height={80}
           />
-          <div className="flex flex-col text-white"> sociale </div>
+          <div className="flex flex-row text-white gap-2 px-2 py-2">
+            {appSocial.map((d) => (
+              <OneSocial {...d} key={d.href} />
+            ))}
+          </div>
         </div>
         <div className="flex flex-col justify-between">
           <div className="px-14">

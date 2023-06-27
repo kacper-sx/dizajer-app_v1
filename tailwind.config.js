@@ -20,7 +20,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["var(--font-karla)", "Consolas"],
-        heading: ["var(--font-prompt)"],
+        heading: ["var(--font-prompt), Consolas"],
       },
       colors: {
         border: "hsl(var(--border))",
