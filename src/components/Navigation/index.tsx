@@ -27,13 +27,7 @@ export default function Navigation() {
       <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
         <div className="w-12 h-12 rounded-xl bg-[#D71F26] flex items-center justify-center text-black text-3xl">
           <Link href="/" className="text-white">
-            <Image
-              className="shadow-[0_4px_-4px_rgb(0,0,0.25)] "
-              alt="home"
-              src="/desire.svg"
-              width={48}
-              height={45}
-            />
+            <Image alt="home" src="/logo.svg" width={48} height={45} />
           </Link>
         </div>
         <div>

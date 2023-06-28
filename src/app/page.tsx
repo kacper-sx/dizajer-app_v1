@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navigation from "../components/Navigation/index";
 import Footer from "@/components/footer/footer";
 import Services from "@/components/services/services";
+import Map from "@/components/map/map";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <div className="max-w-[1440px] min-h-screen flex flex-col gap-4">
         <Navigation />
         <Services />
+        <Map />
         <Footer />
       </div>
     </main>
