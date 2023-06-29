@@ -4,6 +4,7 @@ import Navigation from "../components/Navigation/index";
 import Footer from "@/components/footer/footer";
 import Services from "@/components/services/services";
 import Map from "@/components/map/map";
+import PriceList from "@/components/pricelist/pricelist";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <Navigation />
         <Services />
         <Map />
+        <PriceList />
         <Footer />
       </div>
     </main>

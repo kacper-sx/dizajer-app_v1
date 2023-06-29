@@ -27,9 +27,9 @@ const appSocial: SocialItemsProps[] = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-[#161213] via-[#17171700] mt-auto mb-4 rounded-3xl mx-32 drop-shadow-lg border-[#261718] border-2">
-      <div className="grid grid-cols-[1fr,max-content] px-8 py-6">
-        <div className="flex flex-col px-3 py-3 m-0">
+    <footer className="px-32 py-16">
+      <div className="grid grid-cols-[1fr,max-content] px-8 py-6 gap-8 border-[#261718] border-2 bg-gradient-to-r from-[#161213] via-[#17171700] rounded-3xl drop-shadow-lg">
+        <div className="flex flex-col px-3 py-3 m-0 items-center">
           <Image
             className="py-5"
             src="/logod.png"
