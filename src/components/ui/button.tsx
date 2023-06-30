@@ -24,11 +24,14 @@ const buttonVariants = cva(
           "bg-gradient-to-r from-[#F1D302] to-white text-black text-lg font-bold",
         desireRd:
           "bg-gradient-to-r from-[#D71F26] to-white text-black text-lg font-bold",
+        desireCall:
+          "bg-gradient-to-r from-[#D71F26] to-[#F1D302] text-black text-xl font-bold",
       },
       size: {
         default: "h-10 py-2 px-4",
         sm: "h-9 px-3 rounded-md",
         lg: "h-11 px-8 rounded-md",
+        xl: "h-14 px-6 py-4",
       },
     },
     defaultVariants: {
