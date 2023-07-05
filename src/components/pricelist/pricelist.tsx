@@ -47,14 +47,14 @@ const appCard: OfferProps[] = [
 
 export default function PriceList() {
   return (
-    <div className="flex flex-col px-16 py-16 gap-16">
-      <div className="flex flex-col items-center">
+    <div className="flex flex-col px-16 sm:px-8 py-16 sm:py-4 gap-16 sm:gap-4">
+      <div className="flex flex-col items-center sm:text-center">
         <h1 className="font-heading text-white text-6xl">Cennik</h1>
         <p className="text-[#F1D302] text-sm">
           Znamy swoją wartość i wiemy, że jest niewielka
         </p>
       </div>
-      <div className="flex flex-row justify-around">
+      <div className="flex flex-row justify-around flex-wrap lg:gap-8 md:gap-8 sm:gap-6">
         {appCard.map((d) => (
           <OneOffer {...d} key={null} />
         ))}

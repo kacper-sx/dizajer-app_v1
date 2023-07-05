@@ -27,40 +27,39 @@ const appSocial: SocialItemsProps[] = [
 
 export default function Footer() {
   return (
-    <footer className="px-32 py-16">
-      <div className="grid grid-cols-[1fr,max-content] px-8 py-6 gap-8 border-[#261718] border-2 bg-gradient-to-r from-[#161213] via-[#17171700] rounded-3xl drop-shadow-lg">
-        <div className="flex flex-col px-3 py-3 m-0 items-center">
+    <footer className="flex justify-center px-32 md:px-16 sm:px-8 py-16 sm:py-4">
+      <div className="flex md:flex-row sm:flex-col px-16 sm:px-8 py-6 gap-16 sm:gap-8 border-[#261718] border-2 bg-gradient-to-r from-[#161213] via-[#17171700] rounded-3xl drop-shadow-lg">
+        <div className="flex flex-col py-3 sm:py-0">
           <Image
-            className="py-5"
+            className="self-center py-5"
             src="/logod.png"
             alt="logo"
             width={256}
             height={80}
           />
-          <div className="flex flex-row text-white gap-2 px-2 py-2">
+          <div className="flex flex-row text-white gap-2 sm:gap-4 px-2 py-2 justify-around sm:justify-center">
             {appSocial.map((d) => (
               <OneSocial {...d} key={d.href} />
             ))}
           </div>
         </div>
-        <div className="flex flex-col justify-between">
-          <div className="px-14">
-            <ul className="flex justify-between">
-              <Link href="/kto-tu-gra">
-                <li className="text-white text-2xl">kto tu gra</li>
-              </Link>
-              <Link href="/kim-sa">
-                <li className="text-white text-2xl">kim są</li>
-              </Link>
-              <Link href="/jak-ich-dopasc">
-                <li className="text-white text-2xl">jak ich dopaść</li>
-              </Link>
-              <Link href="/sociale">
-                <li className="text-white text-2xl">sociale</li>
-              </Link>
-            </ul>
-          </div>
-          <div className="flex text-white text-xs gap-32 px-16">
+
+        <div className="flex flex-col justify-between sm:gap-10">
+          <ul className="flex flex-row sm:flex-col justify-between gap-24 md:gap-12 sm:gap-8 text-white text-xl sm:text-3xl sm:items-center">
+            <Link href="/kto-tu-gra">
+              <li>kto tu gra</li>
+            </Link>
+            <Link href="/kim-sa">
+              <li>kim są</li>
+            </Link>
+            <Link href="/jak-ich-dopasc">
+              <li>jak ich dopaść</li>
+            </Link>
+            <Link href="/sociale">
+              <li>sociale</li>
+            </Link>
+          </ul>
+          <div className="flex flex-row sm:flex-col text-white sm:text-base text-xs gap-24 md:gap-12 sm:gap-4 justify-around items-center">
             <p>dizajerofficial@gmail.com</p>
             <p>662 630 912</p>
             <p>COPYRIGHT 2023 © by Dizajer</p>

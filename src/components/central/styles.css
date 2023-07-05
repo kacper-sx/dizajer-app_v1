@@ -43,11 +43,14 @@
 }
 
 #elipse5 {
+  /* Ellipse 5 */
+
   position: absolute;
   width: 100px;
   height: 100px;
-  left: 1253.19px;
-  top: 330px;
+  left: 873.19px;
+  top: 400px;
+
   background: #f1d302;
   filter: blur(64px);
 }

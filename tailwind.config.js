@@ -12,10 +12,16 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: 0,
       screens: {
         "2xl": "1440px",
       },
+    },
+    screens: {
+      sm: { min: "200px", max: "767px" },
+      md: { min: "768px", max: "1023px" },
+      lg: { min: "1024px", max: "1279px" },
+      xl: { min: "1280px", max: "2000px" },
     },
     extend: {
       fontFamily: {

@@ -5,14 +5,14 @@ import { AiOutlineArrowDown } from "react-icons/ai";
 
 export default function Central() {
   return (
-    <div className="relative">
-      <div className="relative h-[800px] z-10">
-        <div id="elipse1"></div>
-        <div id="elipse2"></div>
-        <div id="elipse3"></div>
-        <div id="elipse4"></div>
-        <div id="elipse5"></div>
-        <div id="vector">
+    <div className="relative mx-auto">
+      <div className="relative z-10">
+        <div className="sm:hidden" id="elipse1"></div>
+        <div className="sm:hidden" id="elipse2"></div>
+        <div className="sm:hidden md:hidden" id="elipse3"></div>
+        <div className="sm:hidden md:hidden" id="elipse4"></div>
+        <div className="sm:hidden md:hidden" id="elipse5"></div>
+        <div className="sm:hidden md:hidden" id="vector">
           <svg
             width="651"
             height="220"
@@ -33,7 +33,7 @@ export default function Central() {
                 y2="220"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#D71F26" />
+                <stop stopColor="#D71F26" />
                 <stop offset="1" stop-color="#F1D302" />
               </linearGradient>
             </defs>
@@ -41,7 +41,7 @@ export default function Central() {
         </div>
         <div
           id="bg"
-          className="flex flex-col bg-[#0D0808] h-[800px] px-[162px] gap-14 z-20"
+          className="flex flex-col bg-[#0D0808] sm:px-8 md:px-24 md:items-center px-[162px] gap-14 z-20 sm:items-center"
         >
           <Image
             id="image"
@@ -49,17 +49,17 @@ export default function Central() {
             alt="logo"
             width={750}
             height={240}
-            className="self-center mt-36"
+            className="flex self-center mt-36 md:mt-14 sm:mt-14"
           />
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 sm:gap-2">
             <h1
               id="n1"
-              className="font-heading self-start text-6xl font-extrabold text-white"
+              className="font-heading self-start md:text-center sm:text-center sm:text-4xl text-6xl font-extrabold text-white"
             >
               MOŻE NIE RÓWNO ZA TO NIE CZYSTO!
             </h1>
             <h3
-              className="text-[#F1D302] self-start text-3xl font-extrabold"
+              className="text-[#F1D302] md:text-center xl:self-start lg:self-start sm:text-center sm:text-lg text-3xl font-extrabold"
               id="n2"
             >
               czyli najlepszy zespół po tej stronie Piwonii

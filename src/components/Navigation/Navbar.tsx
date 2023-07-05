@@ -8,11 +8,9 @@ export type NavLinkProps = {
 export default function OneLink(props: NavLinkProps) {
   const { href, content } = props;
   return (
-      <li className="text-white text-base hover:underline">
-    <Link href={href}>
-        {content}
-    </Link>
-      </li>
+    <li className="text-white text-base sm:text-2xl hover:underline">
+      <Link href={href}>{content}</Link>
+    </li>
   );
 }
 
